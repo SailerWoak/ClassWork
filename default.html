@@ -1,0 +1,80 @@
+<!--<POST: https://cloud.digitalocean.com/welcome?i=de7050> -->
+<!--
+
+HOST: 1.1
+{
+    Name:"Karl",
+    Surname: "Wond",
+    Age: "30",
+    Faculty: "FE32234",
+    ID: "34567"
+    }
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nothing Special</title>
+        </head>
+
+<body>
+<h3>Just some Entries</h3>
+<form>
+    <label for="firstname">First name: </label>
+    <input type="text" name="firstname"  required>
+    <br>
+    <label for="lastname">Last name: </label>
+    <input type="text" name="lastname"  required>
+    <br>
+    <label for="age">Age: </label>
+    <input type="age" name="age"  required>
+    <br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="html">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="css">Female</label>
+    <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <label for="faculty">Faculty Nr: </label>
+    <input type="faculty" name="faculty"  required>
+    <br>
+    <label for="number">Id: </label>
+    <input type="number" name="number" required><br>
+    <input type="button" value="Submit"> <br>
+</form>
+<br>
+
+<form>
+    <H3>Just for Fun</H3>
+<video width="300px" height="250px" controls>
+    <source src="https://www.youtube.com/watch?v=AolstL1_MhE&ab_channel=BMTHOfficialVEVO" type="video/mp4s"/>
+</video>
+</form>
+<br>
+
+<h3> Geo Button</h3>
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</body>
+</html>
